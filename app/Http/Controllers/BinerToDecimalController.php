@@ -47,7 +47,7 @@ class BinerToDecimalController extends Controller
         $decimal = $this->binerToDecimal($request->biner);
 
         return response()->json([
-            'status' => 'error',
+            'status' => 'success',
             'data' => $decimal 
         ], 200);
     }
